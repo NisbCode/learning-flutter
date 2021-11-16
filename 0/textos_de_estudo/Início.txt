@@ -1,0 +1,45 @@
+Link da aula principal usada: https://youtu.be/ZupeUUtNaeg
+
+Começado dia: 16/11/2021 (Horas vagas no trabalho)
+
+
+#Preparando ambiente de projeto#
+
+Primeiramente devemos baixar o sdk do flutter: 
+https://flutter.dev/?gclid=EAIaIQobChMImdfPu7-d9AIVidzICh2lHg8OEAAYASAAEgKjiPD_BwE&gclsrc=aw.ds
+
+
+Como eu uso (Ou ao menos usava) bastante o windows, não se esqueça de editar as variáveis de ambiente como pedido no link acima.
+Verifique que tudo correu bem executando: flutter doctor.
+
+
+Querendo ou não, para usarmos o flutter, precisamso do sdk do Android, para isso, precisamos baixar o Android Studio:
+https://developer.android.com/studio?gclid=EAIaIQobChMI-q3k8sid9AIVhIjICh30ygbhEAAYASAAEgLkZvD_BwE&gclsrc=aw.ds
+
+Devemos abrir o aplicativo ao fim da instalação, configurar ele e chegar atela inicial.
+https://stackoverflow.com/questions/64329564/how-do-i-connect-an-android-phone-to-visual-studio-code?rq=1 (Link para configurar o sdk para o flutter):
+Assim que a tela do app em si abrir, clique em mais opções > SDK Manager > Copie o Endereço de localização do Android SDK >
+abra um terminal e execute: flutter config --android-sdk <link copiado> (Ex.: flutter config --android-sdk "\Users\nathalia.nisb\AppData\Local\Android\Sdk")
+
+Antes de continuar, faça também:
+https://stackoverflow.com/questions/60475481/flutter-doctor-error-android-sdkmanager-tool-not-found-windows (Link para configurar o sdkmanager para o flutter):
+Open Android Studio
+Tools Menu, SDK Manager
+In the window that comes up there are inner panels, choose SDK Tools panel
+Tick Android SDK Command-line Tools
+Choose Apply button near the bottom of the window
+> Execute também: flutter doctor --android-licenses
+
+
+
+Em seguida, no Visual Code Studio, devemos procurar a extensão "Flutter" para nos ajudar a executar e debuggar o código.
+
+
+
+Tendo feito esses passos, abra algum terminal e digite o comando flutter create <nome do projeto>
+
+
+
+Em seguida, abra o android studio e crie uma avd:
+https://developer.android.com/studio/run/managing-avds?hl=pt-br
+https://stackoverflow.com/questions/56090813/i-can-get-any-emulators-running-in-vs-code
